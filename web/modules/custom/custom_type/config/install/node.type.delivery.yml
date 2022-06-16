@@ -1,0 +1,9 @@
+langcode: en
+status: true
+name: Delivery
+type: delivery
+description: 'Use this content type to create contents'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: true

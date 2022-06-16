@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: vocab1
+vid: vocab1
+description: vocab1
+weight: 0

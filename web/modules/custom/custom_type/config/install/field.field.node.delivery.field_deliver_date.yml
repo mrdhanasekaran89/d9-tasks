@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_deliver_date
+    - node.type.delivery
+  module:
+    - datetime
+id: node.delivery.field_deliver_date
+field_name: field_deliver_date
+entity_type: node
+bundle: delivery
+label: 'Deliver date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

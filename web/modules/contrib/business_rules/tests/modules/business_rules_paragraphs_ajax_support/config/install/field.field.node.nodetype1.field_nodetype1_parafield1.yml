@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nodetype1_parafield1
+    - node.type.nodetype1
+  module:
+    - entity_reference_revisions
+id: node.nodetype1.field_nodetype1_parafield1
+field_name: field_nodetype1_parafield1
+entity_type: node
+bundle: nodetype1
+label: nodetype1_parafield1
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      paratype1:
+        weight: 2
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: paratype1
+label: paratype1
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paratype1.field_paratype1_termfield1
+    - field.field.paragraph.paratype1.field_paratype1_user1
+    - paragraphs.paragraphs_type.paratype1
+id: paragraph.paratype1.default
+targetEntityType: paragraph
+bundle: paratype1
+mode: default
+content:
+  field_paratype1_termfield1:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_paratype1_user1:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

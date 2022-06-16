@@ -1,0 +1,4 @@
+name: custom module
+type: module
+description: 'Enable this module to create content types'
+core_version_requirement: ^8.8 || ^9

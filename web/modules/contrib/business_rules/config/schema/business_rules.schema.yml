@@ -1,0 +1,69 @@
+business_rules.business_rule.*:
+  type: config_entity
+  label: 'Rule config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
+    status:
+      type: boolean
+      lable: 'Status'
+    description:
+      type: text
+      label: 'Description'
+    reacts_on:
+      type: string
+      label: 'Reacts on'
+    target_entity_type:
+      type: string
+      label: 'Entity type'
+    target_bundle:
+      type: string
+      label: 'Bundle'
+    items:
+      type: sequence
+      label: 'Business rule Items'
+      sequence:
+        type: business_rules.item
+    tags:
+      type: sequence
+      label: 'Tags'
+      sequence:
+        type: string
+        label: 'Tag'
+
+business_rules.item:
+  type: mapping
+  label: 'Item'
+  mapping:
+    type:
+      type: string
+      label: 'Item type' #Action | Condition
+    id:
+      type: string
+      label: 'Item id'
+    weight:
+      type: integer
+      label: 'Weight'
+
+business_rules.settings:
+  type: config_object
+  label: 'Settings'
+  mapping:
+    enable_scheduler:
+      type: boolean
+      label: 'Enable schedule on cron'
+    debug_screen:
+      type: boolean
+      label: 'Show debug information on screen'
+    clear_render_cache:
+      type: boolean
+      label: 'Clear rendered cache on each request'
+    enable_safemode:
+      type: boolean
+      label: 'Enable safe mode'

@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user1
+    - node.type.nodetype1
+id: node.nodetype1.field_user1
+field_name: field_user1
+entity_type: node
+bundle: nodetype1
+label: user1
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: business_rules_views
+  handler_settings:
+    business_rules_view:
+      view_name: view1
+      display_name: entity_reference_1
+      arguments: {  }
+      parent_field: field_termfield1
+      reference_parent_by_uuid: false
+field_type: entity_reference

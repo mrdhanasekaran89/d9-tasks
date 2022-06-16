@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paratype1_user1
+    - paragraphs.paragraphs_type.paratype1
+id: paragraph.paratype1.field_paratype1_user1
+field_name: field_paratype1_user1
+entity_type: paragraph
+bundle: paratype1
+label: paratype1_user1
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: business_rules_views
+  handler_settings:
+    business_rules_view:
+      view_name: view1
+      display_name: entity_reference_1
+      arguments: {  }
+      parent_field: field_paratype1_termfield1
+      reference_parent_by_uuid: false
+field_type: entity_reference

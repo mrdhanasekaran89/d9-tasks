@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paratype1_termfield1
+    - paragraphs.paragraphs_type.paratype1
+    - taxonomy.vocabulary.vocab1
+id: paragraph.paratype1.field_paratype1_termfield1
+field_name: field_paratype1_termfield1
+entity_type: paragraph
+bundle: paratype1
+label: paratype1_termfield1
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      vocab1: vocab1
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

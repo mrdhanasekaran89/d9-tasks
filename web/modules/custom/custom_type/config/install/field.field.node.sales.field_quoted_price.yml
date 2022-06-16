@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quoted_price
+    - node.type.sales
+id: node.sales.field_quoted_price
+field_name: field_quoted_price
+entity_type: node
+bundle: sales
+label: 'Quoted price'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 10
+  max: !!float 100
+  prefix: ''
+  suffix: ''
+field_type: float

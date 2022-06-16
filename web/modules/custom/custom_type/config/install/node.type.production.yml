@@ -1,0 +1,9 @@
+langcode: en
+status: true
+name: Production
+type: production
+description: 'Use this content type to create Production contents'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: true
